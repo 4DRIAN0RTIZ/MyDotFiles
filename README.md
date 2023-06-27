@@ -1,4 +1,4 @@
-# Mis archivos de configuración.
+# DotFiles.
 
 Este repositorio almacena una serie de archivos de configuración que uso en mi sistema operativo. La idea es tenerlos centralizados y poder acceder a ellos desde cualquier lugar. Entre los archivos que se encuentran aquí están:
 
