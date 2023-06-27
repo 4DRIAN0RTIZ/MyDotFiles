@@ -86,7 +86,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git fast-syntax-highlighting fzf zsh-autosuggestions dirhistory zsh-interactive-cd sudo z)
 source $ZSH/oh-my-zsh.sh
 export UNSPLASH_ACCESS_KEY="jnmW1m0ESl-okgySXhVvKSQs7B3t-5XOxe6dG76m6Xw" 
-export OPENAI_API_KEY="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"
+export OPENAI_API_KEY=""
 export OPENWEATHER_API_KEY="e93b1bcb11d8b74a216ab80e31d5ce99"   
 
 # Functions
