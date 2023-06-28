@@ -104,7 +104,7 @@ touchx() {
 }
 
 # Copia el token de git al portapapeles.
-gtp() {
+gtc() {
   cat ~/token.git | xsel --clipboard
 }
 
