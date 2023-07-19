@@ -9,6 +9,10 @@
 -- * override the configuration of LazyVim plugins
 return {
   -- add srcery theme
+  -- add Nvim-R
+  {
+    "jalvesaq/Nvim-R",
+  },
   -- add ChatGPT
   {
   "jackMort/ChatGPT.nvim",

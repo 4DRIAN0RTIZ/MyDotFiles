@@ -1,7 +1,9 @@
 {
   "ChatGPT.nvim": { "branch": "main", "commit": "af509fceb70cab1867a611f3d8fad6d3e7760fb0" },
+  "LanguageTool.nvim": { "branch": "master", "commit": "809e7d77fec834597f495fec737c59292a10025b" },
   "LazyVim": { "branch": "main", "commit": "986a6374f4fd3f9b176105f4a3a4392b24e1953a" },
   "LuaSnip": { "branch": "master", "commit": "a13af80734eb28f744de6c875330c9d3c24b5f3b" },
+  "Nvim-R": { "branch": "master", "commit": "be1c7c19671462acf7a03d68c0d40df120187a6d" },
   "SchemaStore.nvim": { "branch": "main", "commit": "f323ed8e03d2484a1abdaa267b839315f4b34c80" },
   "bufferline.nvim": { "branch": "main", "commit": "02d795081e6a24ec1fd506c513491543793d0780" },
   "catppuccin": { "branch": "main", "commit": "2df7036c5c303c9184869936e40ca18935e4afcb" },
@@ -21,6 +23,7 @@
   "lazy.nvim": { "branch": "main", "commit": "6b2311a46a3808e366bb251270f4cc04afb421ed" },
   "leap.nvim": { "branch": "main", "commit": "14b5a65190fe69388a8f59c695ed3394a10d6af8" },
   "lualine.nvim": { "branch": "master", "commit": "05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9" },
+  "markdown-preview.nvim": { "branch": "master", "commit": "02cc3874738bc0f86e4b91f09b8a0ac88aef8e96" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "5230617372e656d4a2e1e236e03bf7e7b4b97273" },
   "mason.nvim": { "branch": "main", "commit": "7d7efc738e08fc5bee822857db45cb6103f0b0c1" },
   "mini.ai": { "branch": "main", "commit": "44d7df1340b16b16b27b67fba07028cb57f45408" },

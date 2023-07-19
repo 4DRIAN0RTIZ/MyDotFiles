@@ -85,27 +85,57 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git fast-syntax-highlighting fzf zsh-autosuggestions dirhistory zsh-interactive-cd sudo z)
 source $ZSH/oh-my-zsh.sh
-export UNSPLASH_ACCESS_KEY="jnmW1m0ESl-okgySXhVvKSQs7B3t-5XOxe6dG76m6Xw" 
-export OPENAI_API_KEY="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"
-export OPENWEATHER_API_KEY="e93b1bcb11d8b74a216ab80e31d5ce99"   
-
+export UNSPLASH_ACCESS_KEY="" 
+export OPENAI_API_KEY=""
+export OPENWEATHER_API_KEY=""   
+export FOOTBALL_DATA_API_KEY=""
+export BW_CLIENTID=""
+export BW_CLIENTSECRET=""
+export BW_SESSION=""
+export BW_PASSWORD=""
+export ELEVENLABS_API_KEY=""
+export WEATHER_API_KEY=""
 # Functions
 
+# Me imprime en pantalla las funciones que tengo definidas
+sfunctions() {
+  grep "^function" ~/.zshrc | awk '{print $2}' | sed 's/()//' | sed 's/ //' |
+  while read -r function_name; do
+    which "$function_name"
+    echo "--------------"
+  done | batcat -l sh
+}
 
 # Ejecuta la herramienta GPT3quest para hacer preguntas a GPT3
-gpt() {
+function gpt() {
   /home/buzort/University/BashScripts/GPT3quest/GPT3quest.sh "$@"
 }
 
 # Crea un archivo y le da permisos de ejecucion
-touchx() {
+function touchx() {
   touch "$1"
   chmod +x "$1"
 }
 
 # Copia el token de git al portapapeles.
-gtc() {
+function gtc() {
   cat ~/token.git | xsel --clipboard
+}
+
+# Crea un nuevo directorio y se mueve a el
+function mkcd() {
+  mkdir -p "$@" && cd "$@"
+}
+
+# Levanta un servidor html 
+function mkhtmls() {
+  touch index.html
+  mkdir -p css js
+  touch css/style.css
+  touch js/main.js
+
+  # Levanta el servidor usando browser-sync
+  browser-sync start --server --files "*.html" "css/*.css" "js/*.js"
 }
 
 # User configuration

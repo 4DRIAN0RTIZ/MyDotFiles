@@ -3,6 +3,5 @@
 -- Add any additional options here
 local opt = vim.opt
 
--- Disable guibg and ctermbg
-
+-- Colocar si se quiere que el texto se corte al final de la ventana.
 opt.wrap = true
