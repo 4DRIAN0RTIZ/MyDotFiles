@@ -21,7 +21,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="jonathan"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="kphoen"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -85,58 +85,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git fast-syntax-highlighting fzf zsh-autosuggestions dirhistory zsh-interactive-cd sudo z)
 source $ZSH/oh-my-zsh.sh
-export UNSPLASH_ACCESS_KEY="" 
-export OPENAI_API_KEY=""
-export OPENWEATHER_API_KEY=""   
-export FOOTBALL_DATA_API_KEY=""
-export BW_CLIENTID=""
-export BW_CLIENTSECRET=""
-export BW_SESSION=""
-export BW_PASSWORD=""
-export ELEVENLABS_API_KEY=""
-export WEATHER_API_KEY=""
-# Functions
-
-# Me imprime en pantalla las funciones que tengo definidas
-sfunctions() {
-  grep "^function" ~/.zshrc | awk '{print $2}' | sed 's/()//' | sed 's/ //' |
-  while read -r function_name; do
-    which "$function_name"
-    echo "--------------"
-  done | batcat -l sh
-}
-
-# Ejecuta la herramienta GPT3quest para hacer preguntas a GPT3
-function gpt() {
-  /home/buzort/University/BashScripts/GPT3quest/GPT3quest.sh "$@"
-}
-
-# Crea un archivo y le da permisos de ejecucion
-function touchx() {
-  touch "$1"
-  chmod +x "$1"
-}
-
-# Copia el token de git al portapapeles.
-function gtc() {
-  cat ~/token.git | xsel --clipboard
-}
-
-# Crea un nuevo directorio y se mueve a el
-function mkcd() {
-  mkdir -p "$@" && cd "$@"
-}
-
-# Levanta un servidor html 
-function mkhtmls() {
-  touch index.html
-  mkdir -p css js
-  touch css/style.css
-  touch js/main.js
-
-  # Levanta el servidor usando browser-sync
-  browser-sync start --server --files "*.html" "css/*.css" "js/*.js"
-}
+# Carga las funciones
+source ~/.zsh_functions
+# Carga las variables de entorno
+source ~/.zsh_env
 
 # User configuration
 
@@ -165,10 +117,12 @@ function mkhtmls() {
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias bat="batcat"
 alias icat="kitty +kitten icat"
+alias nvimmd="~/Universidad/BashScripts/NeoviMD/NeoviMD.sh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="$PATH:$(pwd)/node_modules/.bin"
+
 
