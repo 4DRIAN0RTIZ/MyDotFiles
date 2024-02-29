@@ -7,3 +7,9 @@ Este repositorio almacena una serie de archivos de configuración que uso en mi 
 - Zsh: Configuración de zsh, un shell que uso en mi sistema operativo.
 - Neovim: Configuración de neovim, un editor de texto que uso en mi sistema operativo.
 
+---------
+Esta es una prueba que se realiza para validar la última parte del test.
+---------
+
+
+
