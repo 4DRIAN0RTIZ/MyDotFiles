@@ -1,0 +1,41 @@
+sfunctions() {
+    {
+        grep "^function" ~/.zsh_functions
+    } | awk '{print $2}' | sed 's/()//' | sed 's/ //' |
+    while read -r function_name; do
+        which "$function_name"
+        echo "--------------"
+    done | batcat -l sh
+}
+
+# Crea un archivo y le da permisos de ejecucion
+function touchx() {
+  touch "$1"
+  chmod +x "$1"
+}
+
+# Copia el token de git al portapapeles.
+function gtc() {
+  cat ~/token.git | xsel --clipboard
+}
+
+# Crea un nuevo directorio y se mueve a el
+function mkcd() {
+  mkdir -p "$@" && cd "$@"
+}
+
+# Levanta un servidor html 
+function mkhtmls() {
+  touch index.html
+  mkdir -p css js
+  touch css/style.css
+  touch js/main.js
+
+  # Levanta el servidor usando browser-sync
+  browser-sync start --server --files "*.html" "css/*.css" "js/*.js"
+}
+
+# Obtiene el PID del bot de Discord
+function NTBOTPID() {
+  ps -eo pid,comm,lstart | grep "$(ps aux | grep '[m]ain.py' | awk '{print $2}')"
+}

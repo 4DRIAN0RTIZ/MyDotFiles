@@ -16,10 +16,10 @@ DOTFILES_DIR="$HOME/MyDotFiles"
 
 # Configuración por defecto
 ZSHRC="$DOTFILES_DIR/zsh/.zshrc"
-ZSHENV="$DOTFILES_DIR/zsh/.zsh_env"
+ZSHENV="$DOTFILES_DIR/zsh/.zsh_env.gpg"
 ZSHFUNCTIONS="$DOTFILES_DIR/zsh/.zsh_functions"
 NVIM_CONFIG="$DOTFILES_DIR/.config/nvim"
-STARSHIP_CONFIG="$DOTFILES_DIR/.config/starship.toml"
+STARSHIP_CONFIG="$DOTFILES_DIR/starship/starship.toml"
 
 # Detectar el entorno basado en el hostname
 ENV=${HOSTNAMES[$HOSTNAME]}
@@ -28,34 +28,32 @@ ENV=${HOSTNAMES[$HOSTNAME]}
 case $ENV in
     oficina)
         ZSHRC="$DOTFILES_DIR/zsh/.zshrc_oficina"
-        ZSHENV="$DOTFILES_DIR/zsh/.zsh_env_oficina"
+        ZSHENV="$DOTFILES_DIR/zsh/.zsh_env_oficina.gpg"
         ZSHFUNCTIONS="$DOTFILES_DIR/zsh/.zsh_functions_oficina"
         NVIM_CONFIG="$DOTFILES_DIR/.config/nvim_oficina"
-        STARSHIP_CONFIG="$DOTFILES_DIR/.config/starship_oficina.toml"
+        STARSHIP_CONFIG="$DOTFILES_DIR/starship/starship_oficina.toml"
         ;;
     casa)
         ZSHRC="$DOTFILES_DIR/.zshrc_casa"
-        ZSHENV="$DOTFILES_DIR/.zsh_env_casa"
+        ZSHENV="$DOTFILES_DIR/.zsh_env_casa.gpg"
         ZSHFUNCTIONS="$DOTFILES_DIR/.zsh_functions_casa"
         NVIM_CONFIG="$DOTFILES_DIR/.config/nvim_casa"
         STARSHIP_CONFIG="$DOTFILES_DIR/.config/starship_casa.toml"
         ;;
     escuela)
         ZSHRC="$DOTFILES_DIR/.zshrc_escuela"
-        ZSHENV="$DOTFILES_DIR/.zsh_env_escuela"
+        ZSHENV="$DOTFILES_DIR/.zsh_env_escuela.gpg"
         ZSHFUNCTIONS="$DOTFILES_DIR/.zsh_functions_escuela"
         NVIM_CONFIG="$DOTFILES_DIR/.config/nvim_escuela"
         STARSHIP_CONFIG="$DOTFILES_DIR/.config/starship_escuela.toml"
         ;;
 esac
 
+# Desencriptar archivos específicos del entorno
+gpg --decrypt $ZSHENV > $HOME/.zsh_env
+
 # Crear directorios si no existen
 mkdir -p $HOME/.config
-
-# Desencripta el archivo .zsh_env si existe
-if [ -f "$ZSHENV" ]; then
-    gpg --decrypt "$ZSHENV" > "$HOME/.zsh_env"
-fi
 
 # Crear enlaces simbólicos
 ln -sf $ZSHRC $HOME/.zshrc
