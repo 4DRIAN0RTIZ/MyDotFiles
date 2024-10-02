@@ -115,9 +115,6 @@ source ~/.zsh_env
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias bat="batcat"
-alias icat="kitty +kitten icat"
-alias nvimmd="~/Universidad/BashScripts/NeoviMD/NeoviMD.sh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -125,4 +122,5 @@ alias nvimmd="~/Universidad/BashScripts/NeoviMD/NeoviMD.sh"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="$PATH:$(pwd)/node_modules/.bin"
 
-
+# Starship
+eval "$(starship init zsh)"
