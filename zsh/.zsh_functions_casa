@@ -35,28 +35,7 @@ function mkhtmls() {
   browser-sync start --server --files "*.html" "css/*.css" "js/*.js"
 }
 
-# Cambia al directorio ~/erp-pruebas
-function irtest() {
-  cd ~/erp-pruebas
-}
-
-# Cambia al directorio ~/erp-productivo
-function irprod() {
-  cd ~/erp-productivo
-}
-
-# Levanta un servidor PHP en ~/erp-pruebas usando el puerto proporcionado
-function phpserver() {
-  local port=$1
-  cd ~/erp-pruebas
-  php -S localhost:$port
-}
-
-# Maneja el ticket o limpia el archivo
-function cht() {
-  if [ "$1" = "clear" ]; then
-    rm -f ~/.last_ticket
-  else
-    echo "$1" > ~/.last_ticket
-  fi
+# Obtiene el PID del bot de Discord
+function NTBOTPID() {
+  ps -eo pid,comm,lstart | grep "$(ps aux | grep '[m]ain.py' | awk '{print $2}')"
 }
