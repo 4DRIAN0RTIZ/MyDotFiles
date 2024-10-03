@@ -60,3 +60,8 @@ function cht() {
     echo "$1" > ~/.last_ticket
   fi
 }
+
+# Copiar el token de gitlab al portapapeles
+function gltc() {
+  cat ~/gitlab.token | xsel --clipboard
+}
