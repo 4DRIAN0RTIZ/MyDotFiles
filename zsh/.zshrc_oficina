@@ -14,8 +14,6 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Export Rust
-export PATH=$PATH:$HOME/.cargo/bin
 # Export snap
 export PATH=$PATH:/snap/bin
 # Path to your oh-my-zsh installation.
@@ -128,6 +126,5 @@ source ~/.zsh_env
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="$PATH:$(pwd)/node_modules/.bin"
-source "$HOME/.rye/env"
 # Starship
 eval "$(starship init zsh)"

@@ -37,12 +37,12 @@ function mkhtmls() {
 
 # Cambia al directorio ~/erp-pruebas
 function irtest() {
-  cd ~/erp-pruebas
+  cd /var/www/html/erp-pruebas
 }
 
 # Cambia al directorio ~/erp-productivo
 function irprod() {
-  cd ~/erp-productivo
+  cd /var/www/html/erp-productivo
 }
 
 # Levanta un servidor PHP en ~/erp-pruebas usando el puerto proporcionado
