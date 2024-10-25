@@ -1,4 +1,5 @@
 add_newline = false
+command_timeout = 1000
 
 # Define a custom prompt format
 format = """
@@ -255,23 +256,14 @@ format = "[\\[$time\\]](bold blue) "
 time_format = "%T"
 disabled = false
 
-# Sección para cambiar el Ticket en el que se está trabajando, seccion custom
-[custom.ticket]
-command = "~/show_ticket.sh"
-when = "true"
-style = "bold cyan"
-format = "[$output]($style) "
-
-# Sección para mostrar si hay un seguimiento
-[custom.follow]
-command = "if [ -f /tmp/has_follow ]; then echo '*'; fi"
-when = "true"
-style = "bold red"
-format = "[$output]($style) "
-
+[custom.weather]
+command = "/home/buzort/.config/weather.sh"
+when = "true" # it means always
+format = '[$output]($style)'
+style = 'bold fg:#e38528 italic'
 
 # Sección para mostrar el tiempo de ejecución de un comando
 [cmd_duration]
-format = "[\\[$duration\\]](bold blue) "
+format = "[\\[$duration\\]](bold red) "
 min_time = 1
 disabled = false

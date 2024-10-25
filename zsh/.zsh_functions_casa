@@ -39,3 +39,12 @@ function mkhtmls() {
 function NTBOTPID() {
   ps -eo pid,comm,lstart | grep "$(ps aux | grep '[m]ain.py' | awk '{print $2}')"
 }
+
+# Crea los archivos para un proyecto de Java, tomando como nombre de proyecto el primer argumento
+function mkjava() {
+  mkdir -p "$1"/src/com/neandertech/"$1"
+  mkdir -p "$1"/src/test/com/neandertech/"$1"
+  touch "$1"/src/com/neandertech/"$1"/Main.java
+  touch "$1"/src/test/com/neandertech/"$1"/MainTest.java
+}
+
