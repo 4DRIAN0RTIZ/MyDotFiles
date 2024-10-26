@@ -1,0 +1,17 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "php",
+    "python",
+    "html"
+  ],
+  "languageserver": {
+    "sql": {
+      "command": "sqls",
+      "args": ["-config", "$HOME/.config/sqls/config.yml"],
+      "filetypes": ["sql"],
+      "shell": true
+    }
+  }
+}

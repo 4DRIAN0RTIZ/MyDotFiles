@@ -65,3 +65,7 @@ function cht() {
 function gltc() {
   cat ~/gitlab.token | xsel --clipboard
 }
+
+function irp() {
+  cd /home/neandertech/.local/share/nvim/ticket_playground
+}
