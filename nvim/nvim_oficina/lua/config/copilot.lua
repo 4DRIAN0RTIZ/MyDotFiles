@@ -1,4 +1,3 @@
-
 require('copilot').setup({
   panel = {
     enabled = true,
@@ -21,11 +20,11 @@ require('copilot').setup({
     hide_during_completion = true,
     debounce = 75,
     keymap = {
-      accept = "<M-l>",
+      accept = false,
       accept_word = false,
       accept_line = false,
-      next = "<M-]>",
-      prev = "<M-[>",
+      next = "<C-l>",
+      prev = "<C-h>",
       dismiss = "<C-]>",
     },
   },

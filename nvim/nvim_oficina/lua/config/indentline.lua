@@ -1,24 +1,24 @@
 local highlight = {
-    "RainbowRed",
-    "RainbowYellow",
-    "RainbowBlue",
-    "RainbowOrange",
-    "RainbowGreen",
-    "RainbowViolet",
-    "RainbowCyan",
+    "DarkGray",
+    "DimGray",
+    "Black",
+    "Gray",
+    "Charcoal",
+    "AshGray",
+    "SlateGray",
 }
 
 local hooks = require "ibl.hooks"
 -- create the highlight groups in the highlight setup hook, so they are reset
 -- every time the colorscheme changes
 hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
-    vim.api.nvim_set_hl(0, "RainbowRed", { fg = "#E06C75" })
-    vim.api.nvim_set_hl(0, "RainbowYellow", { fg = "#E5C07B" })
-    vim.api.nvim_set_hl(0, "RainbowBlue", { fg = "#61AFEF" })
-    vim.api.nvim_set_hl(0, "RainbowOrange", { fg = "#D19A66" })
-    vim.api.nvim_set_hl(0, "RainbowGreen", { fg = "#98C379" })
-    vim.api.nvim_set_hl(0, "RainbowViolet", { fg = "#C678DD" })
-    vim.api.nvim_set_hl(0, "RainbowCyan", { fg = "#56B6C2" })
+    vim.api.nvim_set_hl(0, "DarkGray", { fg = "#A9A9A9" }) -- Dark Gray
+    vim.api.nvim_set_hl(0, "DimGray", { fg = "#696969" }) -- Dim Gray
+    vim.api.nvim_set_hl(0, "Black", { fg = "#000000" }) -- Black
+    vim.api.nvim_set_hl(0, "Gray", { fg = "#808080" }) -- Gray
+    vim.api.nvim_set_hl(0, "Charcoal", { fg = "#36454F" }) -- Charcoal
+    vim.api.nvim_set_hl(0, "AshGray", { fg = "#B2BEB5" }) -- Ash Gray
+    vim.api.nvim_set_hl(0, "SlateGray", { fg = "#708090" }) -- Slate Gray
 end)
 
 require("ibl").setup { indent = { highlight = highlight } }

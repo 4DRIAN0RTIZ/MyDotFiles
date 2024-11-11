@@ -6,6 +6,20 @@ vim.api.nvim_set_keymap('n', '<C-w>', ':q<CR>', { noremap = true, silent = true 
 vim.api.nvim_set_keymap('n', '<C-p>', ':bnext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-o>', ':bprevious<CR>', { noremap = true, silent = true })
 
+-- Configuracion para identación continua y mantener selección después de identar
+vim.keymap.set("v", ">", ">gv", { noremap = true, silent = true })
+vim.keymap.set("v", "<", "<gv", { noremap = true, silent = true })
+
+-- Copilot.lua CONF
+vim.keymap.set("i", '<Tab>', function()
+  if require("copilot.suggestion").is_visible() then
+    require("copilot.suggestion").accept()
+  else
+    vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, false, true), "n", false)
+  end
+end, {
+  silent = true,
+})
 -- Copilot.vim Conf
 -- vim.api.nvim_set_keymap('i', '<C-k>', '<Plug>(copilot-next)', {})
 -- vim.api.nvim_set_keymap('i', '<C-j>', '<Plug>(copilot-previous)', {})
@@ -13,9 +27,9 @@ vim.api.nvim_set_keymap('n', '<C-o>', ':bprevious<CR>', { noremap = true, silent
 -- Codeium.vim Conf
 
 -- Mapeos para navegar entre las sugerencias. -- En init.lua se deshabilitó las bindings por defecto
-vim.keymap.set('i', '<Tab>', function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
-vim.keymap.set('i', '<C-k>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true })
-vim.keymap.set('i', '<C-j>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true, silent = true })
+-- vim.keymap.set('i', '<Tab>', function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+-- vim.keymap.set('i', '<C-k>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true })
+-- vim.keymap.set('i', '<C-j>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true, silent = true })
 
 -- Telescope live grep
 vim.api.nvim_set_keymap('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', { noremap = true, silent = true })

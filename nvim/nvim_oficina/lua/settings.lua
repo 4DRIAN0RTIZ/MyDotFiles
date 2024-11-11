@@ -23,6 +23,7 @@ require('config.diffview')
 require('config.gitsigns')
 require('config.dap')
 require('config.todo_comments')
+require('config.copilot')
 -- require('config.sqls')
 -- require('config.dadbod')
 -- Owns Plugins

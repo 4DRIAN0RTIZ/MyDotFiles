@@ -21,6 +21,14 @@ return require("packer").startup(function(use)
   use "jackMort/ChatGPT.nvim"
   use "nvim-lua/plenary.nvim"
   use "MunifTanjim/nui.nvim"
+  use { "zbirenbaum/copilot.lua" }
+  use {
+    "zbirenbaum/copilot-cmp",
+    after = { "copilot.lua" },
+    config = function ()
+      require("copilot_cmp").setup()
+    end
+  }
   -- use "github/copilot.vim"
   -- use "leafOfTree/vim-matchtag"
   use "sainnhe/gruvbox-material"
@@ -66,7 +74,7 @@ return require("packer").startup(function(use)
   use "othree/html5.vim"
   use "sindrets/diffview.nvim"
   use "folke/todo-comments.nvim"
-  use "Exafunction/codeium.vim"
+  -- use "Exafunction/codeium.vim"
   use "rafi/awesome-vim-colorschemes"
   use "samharju/synthweave.nvim"
   use { "nvim-treesitter/nvim-treesitter",
