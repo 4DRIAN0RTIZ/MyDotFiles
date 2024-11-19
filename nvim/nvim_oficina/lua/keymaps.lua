@@ -136,5 +136,5 @@ vim.api.nvim_set_keymap('n', ';rfpc', ':lua remove_file_put_content()<CR>', { no
 vim.api.nvim_set_keymap('n', ';tc', ':TodoTelescope<CR>', { noremap = true, silent = true }) -- Esto abre Telescope con los comentarios TODO, FIXME, etc
 
 -- Keymaps para sqls
-vim.api.nvim_set_keymap('n', ';eq', 'Plug>(sqls-execute-query)', { noremap = true, silent = true }) -- Esto hace una consulta SQL de todo el archivo
+vim.api.nvim_set_keymap('n', ';eq', '<Plug>(sqls-execute-query)', { noremap = true, silent = true }) -- Esto hace una consulta SQL de todo el archivo
 vim.api.nvim_set_keymap('v', ';eq', '<Plug>(sqls-execute-query)', { noremap = true, silent = true }) -- Esto hace una consulta SQL del rango seleccionado

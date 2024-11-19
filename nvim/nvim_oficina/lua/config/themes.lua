@@ -1,7 +1,7 @@
 -- ~/.config/nvim/lua/config/themes.lua
 
 vim.opt.termguicolors = true
-command = 'colorscheme gotham256'
+command = 'colorscheme onedark'
 vim.cmd(command)
 
 function lineNumberColors()

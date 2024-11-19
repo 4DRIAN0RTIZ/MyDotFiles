@@ -4,7 +4,8 @@
     "markdown",
     "php",
     "python",
-    "html"
+    "html",
+    "jinja"
   ],
   "languageserver": {
     "sql": {

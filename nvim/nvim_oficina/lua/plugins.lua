@@ -22,13 +22,6 @@ return require("packer").startup(function(use)
   use "nvim-lua/plenary.nvim"
   use "MunifTanjim/nui.nvim"
   use { "zbirenbaum/copilot.lua" }
-  use {
-    "zbirenbaum/copilot-cmp",
-    after = { "copilot.lua" },
-    config = function ()
-      require("copilot_cmp").setup()
-    end
-  }
   -- use "github/copilot.vim"
   -- use "leafOfTree/vim-matchtag"
   use "sainnhe/gruvbox-material"
@@ -37,8 +30,8 @@ return require("packer").startup(function(use)
   use "dracula/vim"
   use { "catppuccin/nvim", as = "catppuccin" }
   use "williamboman/nvim-lsp-installer"
-  use "mfussenegger/nvim-dap"
-  use "rcarriga/nvim-dap-ui"
+--  use "mfussenegger/nvim-dap"
+--  use "rcarriga/nvim-dap-ui"
   use "neovim/nvim-lspconfig"
   use "nvim-neotest/nvim-nio"
   use "lewis6991/gitsigns.nvim"
@@ -48,9 +41,9 @@ return require("packer").startup(function(use)
   use "nvim-tree/nvim-web-devicons"
   use "rcarriga/nvim-notify"
   use "folke/noice.nvim"
-  use "tpope/vim-dadbod"
-  use "kristijanhusak/vim-dadbod-ui"
-  use "kristijanhusak/vim-dadbod-completion"
+--  use "tpope/vim-dadbod"
+--  use "kristijanhusak/vim-dadbod-ui"
+-- use "kristijanhusak/vim-dadbod-completion"
   use "KabbAmine/vCoolor.vim"
   use "nvim-telescope/telescope.nvim"
   use({
@@ -72,11 +65,13 @@ return require("packer").startup(function(use)
   -- use "vim-airline/vim-airline-themes"
   use "nvim-tree/nvim-tree.lua"
   use "othree/html5.vim"
+  use "bluz71/vim-moonfly-colors"
   use "sindrets/diffview.nvim"
   use "folke/todo-comments.nvim"
   -- use "Exafunction/codeium.vim"
   use "rafi/awesome-vim-colorschemes"
   use "samharju/synthweave.nvim"
+  use "Glench/Vim-Jinja2-Syntax"
   use { "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
     config = function()
