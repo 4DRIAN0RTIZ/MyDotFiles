@@ -43,7 +43,7 @@ local servers = { 'pyright', 'html', 'tsserver', 'sqls' }
 for _, server in ipairs(servers) do
     lspconfig[server].setup({
         on_attach = function(client, bufnr)
-            lsp_signature.on_attach(signature_cfg, bufnr)
+            -- Puedes añadir más configuración aquí si la necesitas
         end,
     })
 end
@@ -53,7 +53,6 @@ lspconfig.sqls.setup({
     cmd = { "sqls" },
     on_attach = function(client, bufnr)
         require('sqls').on_attach(client, bufnr) -- require sqls.nvim
-        lsp_signature.on_attach(signature_cfg, bufnr)
     end,
     settings = {
         sqls = {

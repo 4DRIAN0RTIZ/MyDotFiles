@@ -28,8 +28,10 @@ require('config.copilot')
 -- require('config.sqls')
 -- require('config.dadbod')
 -- Owns Plugins
+require('config.envolver')
 require('config.ticket_notes')
 require('config.ticket_playground')
 -- Load keymaps
 require('keymaps')
 require('cocconfig')
+-- require('abbrev')

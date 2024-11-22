@@ -13,7 +13,7 @@ local function working_on_ticket()
     ticket = string.gsub(ticket, "\n", "")
     file:close()
 
-    return "Working on ticket: " .. ticket
+    return "T " .. ticket
 end
 
 local function end_laboral_day()

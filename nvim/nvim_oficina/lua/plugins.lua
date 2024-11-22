@@ -56,8 +56,8 @@ return require("packer").startup(function(use)
   use "mattn/emmet-vim"
   use "mhartington/formatter.nvim"
   use "sheerun/vim-polyglot"
-  use "hrsh7th/vim-vsnip"
-  use "hrsh7th/vim-vsnip-integ"
+  -- use "hrsh7th/vim-vsnip"
+  -- use "hrsh7th/vim-vsnip-integ"
   use "tpope/vim-commentary"
   use "alvan/vim-closetag"
   use { "nvim-lualine/lualine.nvim", requires = { "nvim-tree/nvim-web-devicons", opt = true } }

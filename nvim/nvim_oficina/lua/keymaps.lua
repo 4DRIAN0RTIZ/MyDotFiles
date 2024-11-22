@@ -137,4 +137,13 @@ vim.api.nvim_set_keymap('n', ';tc', ':TodoTelescope<CR>', { noremap = true, sile
 
 -- Keymaps para sqls
 vim.api.nvim_set_keymap('n', ';eq', '<Plug>(sqls-execute-query)', { noremap = true, silent = true }) -- Esto hace una consulta SQL de todo el archivo
-vim.api.nvim_set_keymap('v', ';eq', '<Plug>(sqls-execute-query)', { noremap = true, silent = true }) -- Esto hace una consulta SQL del rango seleccionado
+-- vim.api.nvim_set_keymap('v', ';eq', '<Plug>(sqls-execute-query)', { noremap = true, silent = true }) -- Esto hace una consulta SQL del rango seleccionado
+vim.api.nvim_set_keymap('v', ';eq', ':<C-U>botright \'<,\'>SqlsExecuteQuery<CR>', { noremap = true, silent = true })
+
+
+-- Mapeos para envolver con diferentes caracteres
+vim.api.nvim_set_keymap('x', '"', ':<C-u>lua require("config.envolver").wrap_selection(\'"\', \'"\')<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('x', "'", ':<C-u>lua require("config.envolver").wrap_selection("\'", "\'")<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('x', '(', ':<C-u>lua require("config.envolver").wrap_selection(\'(\', \')\')<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('x', '[', ':<C-u>lua require("config.envolver").wrap_selection(\'[\', \']\')<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('x', '{', ':<C-u>lua require("config.envolver").wrap_selection(\'{\', \'}\')<CR>', { noremap = true, silent = true })

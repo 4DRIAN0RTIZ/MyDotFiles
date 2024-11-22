@@ -14,5 +14,9 @@
       "filetypes": ["sql"],
       "shell": true
     }
-  }
+  },
+  "copilot.enable": true,
+  "copilot.autoTrigger": true,
+  "copilot.suggestionDelay": 50,
+  "copilot.acceptSuggestionOnEnter": true
 }
