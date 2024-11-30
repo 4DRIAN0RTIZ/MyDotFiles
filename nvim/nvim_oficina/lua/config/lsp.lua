@@ -52,7 +52,27 @@ end
 lspconfig.sqls.setup({
     cmd = { "sqls" },
     on_attach = function(client, bufnr)
-        require('sqls').on_attach(client, bufnr) -- require sqls.nvim
+        require('sqls').on_attach(client, bufnr)
+        if client.config.settings and client.config.settings.sqls and client.config.settings.sqls.connections then
+            local connections = client.config.settings.sqls.connections
+            if connections[1] and connections[1].dataSourceName then
+                local dataSourceName = connections[1].dataSourceName
+                local db_name = dataSourceName:match("database=([^&]+)")
+                if db_name then
+                    vim.g.current_database = db_name
+                else
+                    vim.g.current_database = 'N/A'
+                end
+            end
+        end
+
+        vim.api.nvim_create_autocmd('User', {
+            pattern = 'SqlsConnectionChoice',
+            callback = function(args)
+                local choice = args.data.choice
+                vim.g.current_database = choice:match("database=([^&]+)")
+            end
+        })
     end,
     settings = {
         sqls = {

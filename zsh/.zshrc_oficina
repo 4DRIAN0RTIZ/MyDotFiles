@@ -129,3 +129,4 @@ source ~/.zsh_env
 export PATH="$PATH:$(pwd)/node_modules/.bin"
 # Starship
 eval "$(starship init zsh)"
+. "/home/neandertech/.deno/env"

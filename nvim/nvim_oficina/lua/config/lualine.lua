@@ -1,7 +1,22 @@
+local function get_current_database()
+    local filetype = vim.bo.filetype
+    if filetype == 'sql' then
+        if vim.g.current_database then
+            return 'DB: ' .. vim.g.current_database
+        else
+            return 'DB: N/A'
+        end
+    else
+        return ''
+    end
+end
+
+-- Función para obtener la hora actual
 local function get_time()
     return os.date("%A, %d %B %Y, %X")
 end
 
+-- Función para obtener el ticket actual
 local function working_on_ticket()
     local file = io.open(os.getenv("HOME") .. "/.last_ticket", "r")
     if file == nil then
@@ -16,6 +31,7 @@ local function working_on_ticket()
     return "T " .. ticket
 end
 
+-- Función para mostrar el fin del día laboral
 local function end_laboral_day()
     local date_time = os.date("*t")
     local day = date_time.wday
@@ -36,7 +52,7 @@ local function end_laboral_day()
     local total_seconds_left = (end_hour * 3600 + end_minute * 60 + end_second) - (current_hour * 3600 + current_minute * 60 + current_second)
 
     if total_seconds_left < 0 then
-        -- Calcular segundos y minutos de retraso, en caso de que minutos sea cero mostrar solo segundos
+        -- Calcular segundos y minutos de retraso
         local seconds_late = math.abs(total_seconds_left)
         local minutes_late = math.floor(seconds_late / 60)
         seconds_late = seconds_late % 60
@@ -74,6 +90,7 @@ local function end_laboral_day()
     end
 end
 
+-- Configuración de lualine
 require('lualine').setup {
     options = {
         icons_enabled = true,
@@ -87,7 +104,7 @@ require('lualine').setup {
         lualine_a = {'mode'},
         lualine_b = {'branch', 'diff', {'diagnostics', sources={'nvim_lsp', 'coc'}}},
         lualine_c = {'filename'},
-        lualine_x = { working_on_ticket, get_time, end_laboral_day, 'encoding', 'filetype'},
+        lualine_x = { get_current_database, working_on_ticket, get_time, end_laboral_day, 'encoding', 'filetype'},
         lualine_y = {'progress'},
         lualine_z = {'location'}
     },
