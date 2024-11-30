@@ -38,7 +38,7 @@ lsp_installer.setup({
 })
 
 -- Configurar servidores automáticamente
-local servers = { 'pyright', 'html', 'tsserver', 'sqls' }
+local servers = { 'pyright', 'html', 'ts_ls', 'sqls' }
 
 for _, server in ipairs(servers) do
     lspconfig[server].setup({
