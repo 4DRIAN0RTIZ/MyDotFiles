@@ -150,6 +150,8 @@ vim.api.nvim_set_keymap('x', '{', ':<C-u>lua require("config.envolver").wrap_sel
 
 -- Mapeos para pomodoro
 vim.api.nvim_set_keymap('n', ';pst', ':lua require("config.pomodoro").start_pomodoro()<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', ';sb', ':lua require("config.pomodoro").start_short_break()<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', ';lb', ':lua require("config.pomodoro").start_long_break()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', ';psb', ':lua require("config.pomodoro").start_short_break()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', ';plb', ':lua require("config.pomodoro").start_long_break()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', ';ppv', ':lua require("config.pomodoro").view_pomodoros()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', ';ppd', ':lua require("config.pomodoro").delete_pomodoro()<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', ';pss', ':PomodoroStatus<CR>', { noremap = true, silent = true })
