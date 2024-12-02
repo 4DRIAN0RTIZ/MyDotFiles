@@ -1,0 +1,15 @@
+2024/09/24-09:32:57.043 2ebc Reusing MANIFEST C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_hackernoon.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/09/24-09:32:57.047 2ebc Recovering log #4
+2024/09/24-09:32:57.047 2ebc Reusing old log C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_hackernoon.com_0.indexeddb.leveldb/000004.log 
+2024/09/24-09:48:55.757 2ebc Level-0 table #8: started
+2024/09/24-09:48:55.760 2ebc Level-0 table #8: 545 bytes OK
+2024/09/24-09:48:55.764 2ebc Delete type=0 #4
+2024/09/24-09:48:55.764 2ebc Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2024/09/24-09:48:55.764 2ebc Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x0e\x00_\x00_\x00s\x00a\x00k\x005\x005\x006\x007\x004\x004\x005\x002\x001' @ 65 : 1
+2024/09/24-09:48:55.765 2ebc Compacting 1@1 + 1@2 files
+2024/09/24-09:48:55.768 2ebc Generated table #9@1: 19 keys, 570 bytes
+2024/09/24-09:48:55.768 2ebc Compacted 1@1 + 1@2 files => 570 bytes
+2024/09/24-09:48:55.770 2ebc compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/09/24-09:48:55.770 2ebc Delete type=2 #5
+2024/09/24-09:48:55.770 2ebc Delete type=2 #8
+2024/09/24-09:48:55.771 2ebc Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x0e\x00_\x00_\x00s\x00a\x00k\x005\x005\x006\x007\x004\x004\x005\x002\x001' @ 65 : 1 .. (end); will stop at (end)

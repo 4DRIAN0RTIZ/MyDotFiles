@@ -1,0 +1,6 @@
+2024/11/06-07:40:57.701 25e8 Creating DB C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_lpcdn.lpsnmedia.net_0.indexeddb.leveldb since it was missing.
+2024/11/06-07:40:57.705 25e8 Reusing MANIFEST C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_lpcdn.lpsnmedia.net_0.indexeddb.leveldb/MANIFEST-000001
+2024/11/06-08:28:33.594 a70 Level-0 table #5: started
+2024/11/06-08:28:33.601 a70 Level-0 table #5: 165638 bytes OK
+2024/11/06-08:28:33.604 a70 Delete type=0 #3
+2024/11/06-08:28:33.605 a70 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

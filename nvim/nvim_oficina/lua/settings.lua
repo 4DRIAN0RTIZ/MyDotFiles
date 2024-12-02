@@ -31,6 +31,7 @@ require('config.copilot')
 require('config.envolver')
 require('config.ticket_notes')
 require('config.ticket_playground')
+require('config.pomodoro')
 -- Load keymaps
 require('keymaps')
 require('cocconfig')

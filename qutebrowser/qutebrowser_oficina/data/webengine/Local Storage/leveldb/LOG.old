@@ -1,0 +1,18 @@
+2024/12/02-07:05:02.387 6f20 Reusing MANIFEST C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\Local Storage\leveldb/MANIFEST-000001
+2024/12/02-07:05:02.388 6f20 Recovering log #707
+2024/12/02-07:05:02.389 6f20 Reusing old log C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\Local Storage\leveldb/000707.log 
+2024/12/02-07:05:10.665 5e18 Level-0 table #711: started
+2024/12/02-07:05:10.669 5e18 Level-0 table #711: 56983 bytes OK
+2024/12/02-07:05:10.670 5e18 Delete type=0 #707
+2024/12/02-07:05:10.671 41c Compacting 4@0 + 1@1 files
+2024/12/02-07:05:10.727 41c Generated table #712@0: 1535 keys, 2343950 bytes
+2024/12/02-07:05:10.727 41c Compacted 4@0 + 1@1 files => 2343950 bytes
+2024/12/02-07:05:10.728 41c compacted to: files[ 0 2 1 0 0 0 0 ]
+2024/12/02-07:05:10.729 41c Delete type=2 #701
+2024/12/02-07:05:10.729 41c Delete type=2 #703
+2024/12/02-07:05:10.729 41c Delete type=2 #706
+2024/12/02-07:05:10.729 41c Delete type=2 #708
+2024/12/02-07:05:10.729 41c Delete type=2 #711
+2024/12/02-07:07:28.641 6f20 Level-0 table #714: started
+2024/12/02-07:07:28.643 6f20 Level-0 table #714: 31588 bytes OK
+2024/12/02-07:07:28.644 6f20 Delete type=0 #710

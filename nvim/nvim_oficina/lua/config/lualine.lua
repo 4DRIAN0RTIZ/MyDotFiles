@@ -13,7 +13,7 @@ end
 
 -- Función para obtener la hora actual
 local function get_time()
-    return os.date("%A, %d %B %Y, %X")
+    return os.date("%A, %d/%m/%y %H:%M:%S")
 end
 
 -- Función para obtener el ticket actual
@@ -60,10 +60,10 @@ local function end_laboral_day()
         local message = "Late by "
 
         if minutes_late > 0 then
-            message = message .. string.format("%d minutes and ", minutes_late)
+            message = message .. string.format("%d M and ", minutes_late)
         end
 
-        message = message .. string.format("%d seconds", seconds_late)
+        message = message .. string.format("%d S", seconds_late)
 
         return message
     else
@@ -73,20 +73,29 @@ local function end_laboral_day()
         local seconds_left = total_seconds_left % 60
 
         -- Construir el mensaje basado en las horas, minutos y segundos restantes
-        local message = "End of laboral day in "
+        local message = "End laboral day in "
 
         if hours_left > 0 then
-            message = message .. string.format("%d hours, ", hours_left)
+            message = message .. string.format("%d H, ", hours_left)
         end
 
         if minutes_left > 0 then
-            message = message .. string.format("%d minutes, ", minutes_left)
+            message = message .. string.format("%d M, ", minutes_left)
         end
 
         -- Siempre mostramos los segundos
-        message = message .. string.format("%d seconds", seconds_left)
+        message = message .. string.format("%d S", seconds_left)
 
         return message
+    end
+end
+
+local function get_pomodoro_status()
+    local pomodoro = require('config.pomodoro')
+    if pomodoro then
+        return pomodoro.get_lualine_status()
+    else    
+        return ""
     end
 end
 
@@ -104,7 +113,7 @@ require('lualine').setup {
         lualine_a = {'mode'},
         lualine_b = {'branch', 'diff', {'diagnostics', sources={'nvim_lsp', 'coc'}}},
         lualine_c = {'filename'},
-        lualine_x = { get_current_database, working_on_ticket, get_time, end_laboral_day, 'encoding', 'filetype'},
+        lualine_x = { get_pomodoro_status, get_current_database, working_on_ticket, get_time, end_laboral_day, 'encoding', 'filetype'},
         lualine_y = {'progress'},
         lualine_z = {'location'}
     },

@@ -1,0 +1,9 @@
+2024/12/02-07:09:24.548 2210 Reusing MANIFEST C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\Local Storage\leveldb/MANIFEST-000001
+2024/12/02-07:09:24.549 2210 Recovering log #713
+2024/12/02-07:09:24.549 2210 Reusing old log C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\Local Storage\leveldb/000713.log 
+2024/12/02-08:46:39.073 2210 Level-0 table #717: started
+2024/12/02-08:46:39.078 2210 Level-0 table #717: 36287 bytes OK
+2024/12/02-08:46:39.081 2210 Delete type=0 #713
+2024/12/02-10:35:01.607 2210 Level-0 table #719: started
+2024/12/02-10:35:01.611 2210 Level-0 table #719: 20736 bytes OK
+2024/12/02-10:35:01.613 2210 Delete type=0 #716

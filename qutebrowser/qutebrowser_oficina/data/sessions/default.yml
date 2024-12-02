@@ -1,0 +1,209 @@
+windows:
+- active: true
+  geometry: !!binary |
+    AdnQywADAAD///qqAAAAu/////8AAAOS///83wAAAO7///57AAADRQAAAAECAAAABVb///qqAAAA
+    2v////8AAAOS
+  tabs:
+  - history:
+    - active: true
+      last_visited: '2024-11-07T07:48:34'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Neander Dashboard
+      url: https://neanderpruebas.com/
+      zoom: 1.0
+  - history:
+    - last_visited: '2024-11-07T07:11:29'
+      pinned: false
+      title: Sistema En-trega
+      url: https://neanderpruebas.com/erp-pruebas/
+    - active: true
+      last_visited: '2024-11-07T08:28:16'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 29
+      title: Principal
+      url: https://neanderpruebas.com/erp-pruebas/principal.php
+      zoom: 1.0
+  - active: true
+    history:
+    - last_visited: '2024-11-07T08:13:34'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T08:13:44'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T08:22:29'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T08:23:18'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T08:28:39'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T08:29:18'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T08:49:00'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T08:49:13'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php#
+    - last_visited: '2024-11-07T08:57:09'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - active: true
+      last_visited: '2024-11-07T09:10:03'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 1118
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php#
+      zoom: 1.0
+  - history:
+    - last_visited: '2024-11-07T07:37:07'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T07:37:31'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php#
+    - last_visited: '2024-11-07T07:48:38'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T07:48:41'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php#
+    - last_visited: '2024-11-07T07:51:20'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T07:51:23'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php#
+    - last_visited: '2024-11-07T07:51:33'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T07:54:51'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T07:55:00'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php#
+    - last_visited: '2024-11-07T07:56:10'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T07:56:16'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T07:56:47'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T07:56:53'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T07:58:00'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T07:58:04'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php#
+    - last_visited: '2024-11-07T07:58:13'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T07:58:18'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T08:03:35'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T08:03:40'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php#
+    - last_visited: '2024-11-07T08:03:49'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T08:04:26'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - last_visited: '2024-11-07T08:11:15'
+      pinned: false
+      title: Capital Humano / Licencias de Montacargistas
+      url: https://neanderpruebas.com/erp-pruebas/licencias_montacargas.php
+    - active: true
+      last_visited: '2024-11-07T08:11:22'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Neander Dashboard
+      url: https://neanderpruebas.com/
+      zoom: 1.0
+  - history:
+    - last_visited: '2024-11-07T07:00:52'
+      pinned: false
+      title: Principal
+      url: https://erp.en-trega.com/en-trega/principal.php
+    - active: true
+      last_visited: '2024-11-07T08:25:38'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: Tickets/Solicitud de Beneficio
+      url: https://erp.en-trega.com/en-trega/ticket_solicitud_tiempo.php
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2024-11-07T08:25:40'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 140
+      title: Tickets/Solicitud de Beneficio
+      url: https://erp.en-trega.com/en-trega/ticket_solicitud_tiempo.php?accion=nuevo
+      zoom: 1.0
+  - history:
+    - active: true
+      last_visited: '2024-11-07T07:00:52'
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: (20+) daily.dev | Where developers grow together
+      url: https://app.daily.dev/
+      zoom: 1.0

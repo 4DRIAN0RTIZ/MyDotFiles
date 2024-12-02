@@ -1,0 +1,6 @@
+2024/09/13-14:53:26.209 2cc4 Creating DB C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_hackernoon.com_0.indexeddb.leveldb since it was missing.
+2024/09/13-14:53:26.214 2cc4 Reusing MANIFEST C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_hackernoon.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/09/13-14:53:45.265 1b64 Level-0 table #5: started
+2024/09/13-14:53:45.267 1b64 Level-0 table #5: 1163 bytes OK
+2024/09/13-14:53:45.269 1b64 Delete type=0 #3
+2024/09/13-14:53:45.270 1b64 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

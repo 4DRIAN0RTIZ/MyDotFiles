@@ -1,0 +1,15 @@
+2024/11/11-13:30:19.586 6edc Reusing MANIFEST C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/11/11-13:30:19.588 6edc Recovering log #23
+2024/11/11-13:30:19.596 6edc Reusing old log C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/000023.log 
+2024/11/11-13:30:53.547 6edc Level-0 table #28: started
+2024/11/11-13:30:53.556 6edc Level-0 table #28: 743287 bytes OK
+2024/11/11-13:30:53.558 6edc Delete type=0 #23
+2024/11/11-13:30:53.559 6edc Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2024/11/11-13:30:53.559 6edc Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x0a\x01 \x03\x00\x00\x00\x00\x00\x00\xf0?\x00\x04\x02\x01\x17\x00s\x00e\x00r\x00v\x00i\x00c\x00e\x00:\x00t\x00o\x00p\x00b\x00a\x00r\x00:\x00f\x00a\x00l\x00l\x00b\x00a\x00c\x00k\x03\x00\x00\x00\x00\x00\x00\xf0?' @ 9941 : 1
+2024/11/11-13:30:53.559 6edc Compacting 1@1 + 1@2 files
+2024/11/11-13:30:53.564 6edc Generated table #29@1: 265 keys, 19641 bytes
+2024/11/11-13:30:53.564 6edc Compacted 1@1 + 1@2 files => 19641 bytes
+2024/11/11-13:30:53.565 6edc compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/11/11-13:30:53.566 6edc Delete type=2 #25
+2024/11/11-13:30:53.566 6edc Delete type=2 #28
+2024/11/11-13:30:53.567 6edc Manual compaction at level-1 from '\x00\x0a\x01 \x03\x00\x00\x00\x00\x00\x00\xf0?\x00\x04\x02\x01\x17\x00s\x00e\x00r\x00v\x00i\x00c\x00e\x00:\x00t\x00o\x00p\x00b\x00a\x00r\x00:\x00f\x00a\x00l\x00l\x00b\x00a\x00c\x00k\x03\x00\x00\x00\x00\x00\x00\xf0?' @ 9941 : 1 .. (end); will stop at (end)
