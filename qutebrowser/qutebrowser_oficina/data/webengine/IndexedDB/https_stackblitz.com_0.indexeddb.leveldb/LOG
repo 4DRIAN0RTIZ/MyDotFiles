@@ -1,6 +1,0 @@
-2024/11/11-09:28:54.536 8014 Creating DB C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_stackblitz.com_0.indexeddb.leveldb since it was missing.
-2024/11/11-09:28:54.544 8014 Reusing MANIFEST C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_stackblitz.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/11/11-09:29:08.736 6edc Level-0 table #5: started
-2024/11/11-09:29:08.739 6edc Level-0 table #5: 849 bytes OK
-2024/11/11-09:29:08.743 6edc Delete type=0 #3
-2024/11/11-09:29:08.743 6edc Manual compaction at level-0 from (begin) .. (end); will stop at (end)

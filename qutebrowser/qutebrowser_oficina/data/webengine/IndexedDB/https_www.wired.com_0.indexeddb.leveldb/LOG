@@ -1,6 +1,0 @@
-2024/10/17-11:48:48.213 45f8 Creating DB C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_www.wired.com_0.indexeddb.leveldb since it was missing.
-2024/10/17-11:48:48.218 45f8 Reusing MANIFEST C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_www.wired.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/10/17-11:52:03.255 3e2c Level-0 table #5: started
-2024/10/17-11:52:03.256 3e2c Level-0 table #5: 844 bytes OK
-2024/10/17-11:52:03.258 3e2c Delete type=0 #3
-2024/10/17-11:52:03.259 3e2c Manual compaction at level-0 from (begin) .. (end); will stop at (end)

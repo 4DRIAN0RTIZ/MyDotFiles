@@ -1,7 +1,0 @@
-2024/11/04-13:29:31.127 46d0 Reusing MANIFEST C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_www.youtube-nocookie.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/11/04-13:29:31.128 46d0 Recovering log #3
-2024/11/04-13:29:31.128 46d0 Reusing old log C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_www.youtube-nocookie.com_0.indexeddb.leveldb/000003.log 
-2024/11/04-14:39:31.177 4518 Level-0 table #5: started
-2024/11/04-14:39:31.178 4518 Level-0 table #5: 881 bytes OK
-2024/11/04-14:39:31.180 4518 Delete type=0 #3
-2024/11/04-14:39:31.181 4518 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

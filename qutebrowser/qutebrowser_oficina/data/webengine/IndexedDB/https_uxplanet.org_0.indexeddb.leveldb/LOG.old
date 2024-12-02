@@ -1,7 +1,0 @@
-2024/11/04-11:43:29.890 5aec Reusing MANIFEST C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_uxplanet.org_0.indexeddb.leveldb/MANIFEST-000001
-2024/11/04-11:43:29.893 5aec Recovering log #3
-2024/11/04-11:43:29.895 5aec Reusing old log C:\Users\Desarrollo3\AppData\Roaming\qutebrowser\data\webengine\IndexedDB\https_uxplanet.org_0.indexeddb.leveldb/000003.log 
-2024/11/04-11:43:43.202 5aec Level-0 table #5: started
-2024/11/04-11:43:43.206 5aec Level-0 table #5: 34491 bytes OK
-2024/11/04-11:43:43.208 5aec Delete type=0 #3
-2024/11/04-11:43:43.208 5aec Manual compaction at level-0 from (begin) .. (end); will stop at (end)
