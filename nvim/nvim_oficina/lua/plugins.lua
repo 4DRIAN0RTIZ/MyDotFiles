@@ -72,6 +72,8 @@ return require("packer").startup(function(use)
   use "rafi/awesome-vim-colorschemes"
   use "samharju/synthweave.nvim"
   use "Glench/Vim-Jinja2-Syntax"
+  use "stevearc/aerial.nvim"
+  use "marko-cerovac/material.nvim"
   use { "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
     config = function()

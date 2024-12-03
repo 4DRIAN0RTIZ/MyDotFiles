@@ -1,7 +1,8 @@
 -- ~/.config/nvim/lua/config/themes.lua
 
 vim.opt.termguicolors = true
-command = 'colorscheme gruvbox'
+vim.g.material_style = 'darker'
+command = 'colorscheme material'
 vim.cmd(command)
 
 function lineNumberColors()

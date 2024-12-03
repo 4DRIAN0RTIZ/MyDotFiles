@@ -24,6 +24,7 @@ local function configure_basic()
   vim.g.codeium_disable_bindings = 1
   vim.opt.splitright = true
   vim.opt.maxmempattern = 200000
+  vim.opt.fillchars = { eob = " " }
 end
 
 -- Configuración de Blade
