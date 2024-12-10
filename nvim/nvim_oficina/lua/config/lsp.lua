@@ -2,6 +2,8 @@
 
 -- Configuración para ventanas flotantes con bordes personalizados y transparencia
 
+navic = require('nvim-navic')
+
 -- Define el estilo de los bordes
 local border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" }
 
@@ -38,13 +40,18 @@ lsp_installer.setup({
 })
 
 -- Configurar servidores automáticamente
-local servers = { 'pyright', 'html', 'ts_ls', 'sqls' }
+local servers = { 'pyright', 'html', 'ts_ls', 'sqls', 'intelephense' }
+
+local on_attach = function(client, bufnr)
+    -- Si el servidor soporta documentSymbolProvider, attach navic
+    if client.server_capabilities.documentSymbolProvider then
+        navic.attach(client, bufnr)
+    end
+end
 
 for _, server in ipairs(servers) do
     lspconfig[server].setup({
-        on_attach = function(client, bufnr)
-            -- Puedes añadir más configuración aquí si la necesitas
-        end,
+        on_attach = on_attach,
     })
 end
 

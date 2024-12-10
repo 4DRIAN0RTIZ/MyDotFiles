@@ -74,6 +74,10 @@ return require("packer").startup(function(use)
   use "Glench/Vim-Jinja2-Syntax"
   use "stevearc/aerial.nvim"
   use "marko-cerovac/material.nvim"
+  use {
+      "SmiteshP/nvim-navic",
+      requires = "neovim/nvim-lspconfig"
+  }
   use { "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
     config = function()

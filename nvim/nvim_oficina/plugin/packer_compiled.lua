@@ -84,15 +84,15 @@ _G.packer_plugins = {
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/CopilotChat.nvim",
     url = "https://github.com/CopilotC-Nvim/CopilotChat.nvim"
   },
-  LuaSnip = {
-    loaded = true,
-    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/LuaSnip",
-    url = "https://github.com/L3MON4D3/LuaSnip"
-  },
   ["Vim-Jinja2-Syntax"] = {
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/Vim-Jinja2-Syntax",
     url = "https://github.com/Glench/Vim-Jinja2-Syntax"
+  },
+  ["aerial.nvim"] = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/aerial.nvim",
+    url = "https://github.com/stevearc/aerial.nvim"
   },
   ["awesome-vim-colorschemes"] = {
     loaded = true,
@@ -173,6 +173,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
+  ["material.nvim"] = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
   },
   ["noice.nvim"] = {
     loaded = true,

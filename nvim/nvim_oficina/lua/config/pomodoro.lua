@@ -13,6 +13,12 @@ local status = {
     description = "",
 }
 
+local stages = {
+    seed = "🌱",
+    sprout = "🌿",
+    tree = "🌳",
+}
+
 local pomodoro_dir = vim.fn.stdpath('data') .. '/pomodoro'
 local pomodoro_log_file = pomodoro_dir .. '/pomodoros.json'
 local pomodoro_state_file = pomodoro_dir .. '/state.json'
@@ -174,13 +180,30 @@ function M.get_status()
         status.mode, format_time(status.time_left), status.pomodoros_completed)
 end
 
+local function get_visual_stage()
+    if status.mode == "pomodoro" then
+        local elapsed = timers.pomodoro - status.time_left
+        if elapsed < 5 * 60 then
+            return stages.seed -- Semilla al inicio
+        elseif elapsed < 25 * 60 then
+            return stages.sprout -- Brote a los 5 minutos
+        else
+            return stages.tree -- Árbol al final
+        end
+    else
+        return ""
+    end
+end
+
 function M.get_lualine_status()
     if status.mode == "idle" then
         return ""
     else
-        return string.format("%s (%s) - %s", status.mode, format_time(status.time_left), status.description)
+        local visual = get_visual_stage() -- Obtiene el estado visual
+        return string.format("%s (%s) - %s", visual, format_time(status.time_left), status.description)
     end
 end
+
 
 function M.view_pomodoros()
     load_pomodoros()

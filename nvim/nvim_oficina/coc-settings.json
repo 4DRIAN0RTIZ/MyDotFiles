@@ -1,4 +1,5 @@
 {
+  // Configuraciones generales
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",
@@ -7,6 +8,11 @@
     "html",
     "jinja"
   ],
+  "coc.preferences.diagnostic.enable": true,
+  "coc.preferences.snippetSuggestions": "inline",
+  "coc.preferences.autoTrigger": "enable",
+
+  // Configuración del lenguaje SQL
   "languageserver": {
     "sql": {
       "command": "sqls",
@@ -15,8 +21,17 @@
       "shell": true
     }
   },
+
+  // Configuración de Copilot
   "copilot.enable": true,
   "copilot.autoTrigger": true,
   "copilot.suggestionDelay": 50,
-  "copilot.acceptSuggestionOnEnter": true
+  "copilot.acceptSuggestionOnEnter": true,
+
+  // Configuración de Rust (rust-analyzer)
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "rust-analyzer.updates.checkOnStartup": false,
+  "rust-analyzer.updates.channel": "stable",
+  "rust-analyzer.hover.documentation.enable": true
 }

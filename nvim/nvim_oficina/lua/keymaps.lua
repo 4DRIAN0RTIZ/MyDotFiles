@@ -1,10 +1,10 @@
 vim.g.mapleader = ' '
 
 -- CONFIGURATION KEYMAPS
-vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-w>', ':q<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-p>', ':bnext<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-o>', ':bprevious<CR>', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<C-w>', ':q<CR>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', '<C-p>', ':bnext<CR>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', '<C-o>', ':bprevious<CR>', { noremap = true, silent = true })
 
 -- Configuracion para identación continua y mantener selección después de identar
 vim.keymap.set("v", ">", ">gv", { noremap = true, silent = true })
@@ -155,3 +155,9 @@ vim.api.nvim_set_keymap('n', ';plb', ':lua require("config.pomodoro").start_long
 vim.api.nvim_set_keymap('n', ';ppv', ':lua require("config.pomodoro").view_pomodoros()<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', ';ppd', ':lua require("config.pomodoro").delete_pomodoro()<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', ';pss', ':PomodoroStatus<CR>', { noremap = true, silent = true })
+
+
+-- Mapeo para seleccionar función
+
+vim.api.nvim_set_keymap('n', ';bs', 'v%0', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', ';bsc', 'v%0y', { noremap = true, silent = true })
