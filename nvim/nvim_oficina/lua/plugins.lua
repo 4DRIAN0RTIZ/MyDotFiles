@@ -89,4 +89,5 @@ return require("packer").startup(function(use)
       }
     end
   }
+  use { 'gorbit99/codewindow.nvim' }
 end)

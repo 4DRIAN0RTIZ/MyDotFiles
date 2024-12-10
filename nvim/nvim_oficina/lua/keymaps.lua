@@ -161,3 +161,9 @@ vim.api.nvim_set_keymap('n', ';pss', ':PomodoroStatus<CR>', { noremap = true, si
 
 vim.api.nvim_set_keymap('n', ';bs', 'v%0', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', ';bsc', 'v%0y', { noremap = true, silent = true })
+
+-- Mapeo CodeWindow
+vim.api.nvim_set_keymap('n', ';mms', ':lua require("codewindow").toggle_minimap()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', ';mmf', ':lua require("codewindow").toggle_focus()<CR>', { noremap = true, silent = true }) -- Enfocar minimapa
+
+
