@@ -13,7 +13,7 @@ return require("packer").startup(function(use)
   use { "akinsho/bufferline.nvim", requires = "kyazdani42/nvim-web-devicons" }
   use "lukas-reineke/indent-blankline.nvim"
   use { "akinsho/toggleterm.nvim" }
-  use "CopilotC-Nvim/CopilotChat.nvim"
+  use { "CopilotC-Nvim/CopilotChat.nvim", branch = "main" }
   use "norcalli/nvim-colorizer.lua"
   use "weirongxu/plantuml-previewer.vim"
   use "tyru/open-browser.vim"

@@ -11,8 +11,8 @@ local colorschemes = {
     LineNrBelow = { fg = '#F222FF', bold = true },
   },
   material = {
-    LineNrAbove = { fg = '#FF5370', bold = true },
-    LineNrBelow = { fg = '#FF5370', bold = true },
+    LineNrAbove = { fg = '#B2CCD6', bold = true },
+    LineNrBelow = { fg = '#B2CCD6', bold = true },
   },
   gruvbox = {
     LineNrAbove = { fg = '#FABD2F', bold = true },

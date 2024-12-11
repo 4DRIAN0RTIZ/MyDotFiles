@@ -2,7 +2,8 @@
 require('codewindow').setup()
 
 -- Colores personalizados para CodeWindow
-vim.api.nvim_set_hl(0, 'CodewindowBorder', { fg = '#FFD700' }) -- Color dorado para el borde
+vim.opt.termguicolors = true
+vim.api.nvim_set_hl(0, 'CodewindowBorder', { fg = '#F3F3F3' }) -- Color blanco para el borde
 vim.api.nvim_set_hl(0, 'CodewindowBackground', { bg = '#1E1E1E' }) -- Fondo oscuro
 vim.api.nvim_set_hl(0, 'CodewindowWarn', { fg = '#FFA500' }) -- Color naranja para advertencias
 vim.api.nvim_set_hl(0, 'CodewindowError', { fg = '#FF0000' }) -- Color rojo para errores
