@@ -1,4 +1,4 @@
--- codewindow.lua
+-- ~/.config/nvim/lua/config/codewindow.lua
 require('codewindow').setup()
 
 -- Colores personalizados para CodeWindow

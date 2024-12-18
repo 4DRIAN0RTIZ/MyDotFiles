@@ -1,7 +1,5 @@
 -- ~/.config/nvim/lua/plugins/lsp.lua
 
--- Configuración para ventanas flotantes con bordes personalizados y transparencia
-
 navic = require('nvim-navic')
 
 -- Define el estilo de los bordes
@@ -16,19 +14,11 @@ vim.lsp.util.open_floating_preview = (function(orig)
     end
 end)(vim.lsp.util.open_floating_preview)
 
--- Establece transparencia para las ventanas flotantes
-vim.cmd [[
-    highlight NormalFloat guibg=NONE guifg=#abb2bf
-    highlight FloatBorder guibg=NONE guifg=#61afef
-]]
-
-vim.o.winblend = 20 -- Ajusta la transparencia de las ventanas flotantes
-
 local lspconfig = require('lspconfig')
-local lsp_installer = require('nvim-lsp-installer')
+local mason = require('mason')
 
--- Configuración de nvim-lsp-installer
-lsp_installer.setup({
+-- Configuración de mason
+mason.setup({
     automatic_installation = true,
     ui = {
         icons = {
@@ -41,12 +31,36 @@ lsp_installer.setup({
 
 -- Configurar servidores automáticamente
 local servers = { 'pyright', 'html', 'ts_ls', 'sqls', 'intelephense' }
+vim.diagnostic.config({
+    virtual_text = false,
+    underline = true,
+    signs = true,
+    update_in_insert = false,
+})
 
 local on_attach = function(client, bufnr)
-    -- Si el servidor soporta documentSymbolProvider, attach navic
     if client.server_capabilities.documentSymbolProvider then
         navic.attach(client, bufnr)
     end
+    local bufopts = { noremap = true, silent = true, buffer = bufnr }
+
+    vim.keymap.set("n", ";dd", vim.diagnostic.open_float, bufopts)
+
+    -- Autocomando para expandir el texto virtual al pasar por la línea
+    vim.api.nvim_create_autocmd("CursorHold", {
+        buffer = bufnr,
+        callback = function()
+            local opts = {
+                focusable = false,
+                close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+                border = 'rounded',
+                source = 'always',
+                prefix = ' ',
+                scope = 'cursor',
+            }
+            vim.diagnostic.open_float(nil, opts)
+        end
+    })
 end
 
 for _, server in ipairs(servers) do

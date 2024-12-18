@@ -11,6 +11,7 @@ return require("packer").startup(function(use)
   use "wbthomason/packer.nvim"
   use 'nanotee/sqls.nvim'
   use { "akinsho/bufferline.nvim", requires = "kyazdani42/nvim-web-devicons" }
+  use { "tamton-aquib/duck.nvim", config = function() vim.keymap.set('n', '<leader>dd', function() require("duck").hatch() end, {}) end }
   use "lukas-reineke/indent-blankline.nvim"
   use { "akinsho/toggleterm.nvim" }
   use { "CopilotC-Nvim/CopilotChat.nvim", branch = "main" }
@@ -29,7 +30,7 @@ return require("packer").startup(function(use)
   use { "folke/tokyonight.nvim", branch = "main" }
   use "dracula/vim"
   use { "catppuccin/nvim", as = "catppuccin" }
-  use "williamboman/nvim-lsp-installer"
+  -- use "williamboman/nvim-lsp-installer"
 --  use "mfussenegger/nvim-dap"
 --  use "rcarriga/nvim-dap-ui"
   use "neovim/nvim-lspconfig"
@@ -40,6 +41,7 @@ return require("packer").startup(function(use)
   use "folke/trouble.nvim"
   use "nvim-tree/nvim-web-devicons"
   use "rcarriga/nvim-notify"
+  use "vyfor/cord.nvim"
   use "folke/noice.nvim"
 --  use "tpope/vim-dadbod"
 --  use "kristijanhusak/vim-dadbod-ui"
@@ -74,6 +76,7 @@ return require("packer").startup(function(use)
   use "Glench/Vim-Jinja2-Syntax"
   use "stevearc/aerial.nvim"
   use "marko-cerovac/material.nvim"
+  use 'andweeb/presence.nvim'
   use {
       "SmiteshP/nvim-navic",
       requires = "neovim/nvim-lspconfig"
@@ -90,4 +93,5 @@ return require("packer").startup(function(use)
     end
   }
   use { 'gorbit99/codewindow.nvim' }
+  use { 'williamboman/mason.nvim' }
 end)

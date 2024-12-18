@@ -138,7 +138,7 @@ local function utility_functions()
   local function open_floating_window(content)
     local buf = vim.api.nvim_create_buf(false, true)
     vim.api.nvim_buf_set_option(buf, 'bufhidden', 'wipe')
-    
+
     local width = math.floor(vim.o.columns * 0.8)
     local height = math.floor(vim.o.lines * 0.8)
     local row = math.floor((vim.o.lines - height) / 2)

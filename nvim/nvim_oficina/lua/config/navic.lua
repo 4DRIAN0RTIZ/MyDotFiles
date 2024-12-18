@@ -1,9 +1,5 @@
 -- ~/.config/nvim/lua/plugins/navic.lua
 
-local M = {}
-
-function M.setup()
-    -- Configuración por defecto de nvim-navic
     require('nvim-navic').setup {
         icons = {
             File = ' ',
@@ -38,6 +34,3 @@ function M.setup()
         depth_limit = 0,
         depth_limit_indicator = ".."
     }
-end
-
-return M
