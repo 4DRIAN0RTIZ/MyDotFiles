@@ -113,7 +113,7 @@ require('lualine').setup {
         lualine_a = {'mode'},
         lualine_b = {'branch', 'diff', {'diagnostics', sources={'nvim_lsp', 'coc'}}},
         lualine_c = {'filename'},
-        lualine_x = { get_pomodoro_status, get_current_database, working_on_ticket, get_time, end_laboral_day, 'encoding', 'filetype'},
+        lualine_x = { get_pomodoro_status, get_current_database, working_on_ticket, end_laboral_day, 'encoding', 'filetype'},
         lualine_y = {'progress'},
         lualine_z = {'location'}
     },

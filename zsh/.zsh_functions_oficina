@@ -69,3 +69,11 @@ function gltc() {
 function irp() {
   cd /home/neandertech/.local/share/nvim/ticket_playground
 }
+
+function irprodServer() {
+  cd /mnt/y/en-trega
+}
+
+function irxmlpruebas() {
+  cd /mnt/y/en-trega/xml_pruebas
+}

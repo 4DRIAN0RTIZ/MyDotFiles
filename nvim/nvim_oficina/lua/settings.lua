@@ -5,6 +5,7 @@ require('plugins')
 
 -- Load plugin configurations
 require('config.aerial')
+require('config.binary_clock').mostrar_reloj_binario()
 require('config.bufferline')
 require('config.chatgpt')
 require('config.codewindow')

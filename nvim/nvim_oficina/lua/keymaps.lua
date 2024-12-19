@@ -273,4 +273,5 @@ vim.api.nvim_set_keymap('n', ';da', ':lua require("duck").cook_all()<CR>', { nor
 -- GITSIGNS
 -- =====================================
 
-vim.api.nvim_set_keymap('n', '<leader>gb', ':Gitsigns blame_line<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gbl', ':Gitsigns blame_line<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gb', ':Gitsigns blame<CR>', { noremap = true, silent = true })

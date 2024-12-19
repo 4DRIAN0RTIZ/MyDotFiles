@@ -33,7 +33,6 @@ return require("packer").startup(function(use)
   -- use "williamboman/nvim-lsp-installer"
 --  use "mfussenegger/nvim-dap"
 --  use "rcarriga/nvim-dap-ui"
-  use "neovim/nvim-lspconfig"
   use "nvim-neotest/nvim-nio"
   use "lewis6991/gitsigns.nvim"
   use "StanAngeloff/php.vim"
@@ -43,6 +42,14 @@ return require("packer").startup(function(use)
   use "rcarriga/nvim-notify"
   use "vyfor/cord.nvim"
   use "folke/noice.nvim"
+  use {
+  'edluffy/hologram.nvim',
+  config = function()
+    require('hologram').setup{
+      auto_display = true
+    }
+  end
+}
 --  use "tpope/vim-dadbod"
 --  use "kristijanhusak/vim-dadbod-ui"
 -- use "kristijanhusak/vim-dadbod-completion"
@@ -93,5 +100,9 @@ return require("packer").startup(function(use)
     end
   }
   use { 'gorbit99/codewindow.nvim' }
-  use { 'williamboman/mason.nvim' }
+  use {
+      "williamboman/mason.nvim",
+      "williamboman/mason-lspconfig.nvim",
+      "neovim/nvim-lspconfig",
+  }
 end)
