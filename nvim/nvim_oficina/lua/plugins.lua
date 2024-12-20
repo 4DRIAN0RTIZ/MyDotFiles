@@ -105,4 +105,11 @@ return require("packer").startup(function(use)
       "williamboman/mason-lspconfig.nvim",
       "neovim/nvim-lspconfig",
   }
+  use {
+    "mg979/vim-visual-multi",
+    branch = "master"
+  }
+  use 'karb94/neoscroll.nvim'
+  use 'AndreM222/copilot-lualine'
+  use "jbyuki/venn.nvim"
 end)

@@ -59,6 +59,9 @@ local function update_binary_clock()
   }
 
   local buf = vim.api.nvim_win_get_buf(win_id)
+  vim.api.nvim_buf_set_option(buf, 'modifiable', true) -- Permitir modificación
+  vim.api.nvim_buf_set_lines(buf, 0, -1, false, lines)
+  vim.api.nvim_buf_set_option(buf, 'modifiable', false) -- Deshabilitar modificación
 end
 
 -- Función para actualizar la posición de la ventana flotante
@@ -78,6 +81,22 @@ local function update_window_position()
       col = col,
     })
   end
+end
+
+-- Configurar temporizador inicial
+local function start_timer()
+  if timer then
+    timer:stop()
+    timer:close()
+  end
+  timer = vim.loop.new_timer()
+
+  -- Calcular cuánto falta para el próximo minuto completo
+  local current_time = os.date("*t")
+  local delay = (60 - current_time.sec) * 1000 -- Milisegundos hasta el próximo minuto
+
+  -- Iniciar el temporizador con el retraso inicial
+  timer:start(delay, 60000, vim.schedule_wrap(update_binary_clock))
 end
 
 -- Función para mostrar el reloj binario
@@ -120,12 +139,7 @@ function M.mostrar_reloj_binario()
   })
 
   -- Configurar actualización automática cada minuto
-  if timer then
-    timer:stop()
-    timer:close()
-  end
-  timer = vim.loop.new_timer()
-  timer:start(0, 60000, vim.schedule_wrap(update_binary_clock))
+  start_timer()
 
   -- Actualizar posición de la ventana en caso de cambio de tamaño
   vim.cmd([[

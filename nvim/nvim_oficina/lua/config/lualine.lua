@@ -113,7 +113,32 @@ require('lualine').setup {
         lualine_a = {'mode'},
         lualine_b = {'branch', 'diff', {'diagnostics', sources={'nvim_lsp', 'coc'}}},
         lualine_c = {'filename'},
-        lualine_x = { get_pomodoro_status, get_current_database, working_on_ticket, end_laboral_day, 'encoding', 'filetype'},
+        lualine_x = { get_pomodoro_status, get_current_database, working_on_ticket, end_laboral_day, {
+            'copilot',
+            -- Default values
+            symbols = {
+                status = {
+                    icons = {
+                        enabled = " ",
+                        sleep = " ",   -- auto-trigger disabled
+                        disabled = " ",
+                        warning = " ",
+                        unknown = " "
+                    },
+                    hl = {
+                        enabled = "#50FA7B",
+                        sleep = "#AEB7D0",
+                        disabled = "#6272A4",
+                        warning = "#FFB86C",
+                        unknown = "#FF5555"
+                    }
+                },
+                spinners = require("copilot-lualine.spinners").dots,
+                spinner_color = "#6272A4"
+            },
+            show_colors = true,
+            show_loading = true
+        },'encoding', 'filetype'},
         lualine_y = {'progress'},
         lualine_z = {'location'}
     },

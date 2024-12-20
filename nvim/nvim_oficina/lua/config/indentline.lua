@@ -21,4 +21,10 @@ hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
     vim.api.nvim_set_hl(0, "GruvboxPurple", { fg = "#d3869b" }) -- Gruvbox Purple
 end)
 
-require("ibl").setup { indent = { highlight = highlight } }
+require("ibl").setup {
+    indent = { highlight = highlight },
+    exclude = {
+        filetypes = { "txt" },
+    },
+}
+

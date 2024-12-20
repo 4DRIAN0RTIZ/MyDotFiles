@@ -14,7 +14,7 @@ vim.opt.updatetime = 300
 
 -- Always show the signcolumn, otherwise it would shift the text each time
 -- diagnostics appear/become resolved.
-vim.opt.signcolumn = "yes"
+-- vim.opt.signcolumn = "yes"
 
 -- Make <CR> to accept selected completion item or notify coc.nvim to format
 -- <C-g>u breaks current undo, please make your own choice.
