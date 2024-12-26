@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/awesome-vim-colorschemes",
     url = "https://github.com/rafi/awesome-vim-colorschemes"
   },
+  ["bluloco.nvim"] = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/bluloco.nvim",
+    url = "https://github.com/uloco/bluloco.nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -123,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/codewindow.nvim",
     url = "https://github.com/gorbit99/codewindow.nvim"
+  },
+  ["copilot-lualine"] = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/copilot-lualine",
+    url = "https://github.com/AndreM222/copilot-lualine"
   },
   ["copilot.lua"] = {
     loaded = true,
@@ -185,6 +195,11 @@ _G.packer_plugins = {
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
+  },
   ["markdown-preview.nvim"] = {
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
@@ -205,6 +220,11 @@ _G.packer_plugins = {
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/material.nvim",
     url = "https://github.com/marko-cerovac/material.nvim"
   },
+  ["neoscroll.nvim"] = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
+    url = "https://github.com/karb94/neoscroll.nvim"
+  },
   ["noice.nvim"] = {
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/noice.nvim",
@@ -219,6 +239,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
+  },
+  ["nvim-dap-virtual-text"] = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
+    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -246,7 +281,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
-    config = { "\27LJ\2\n‰\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\14highlight\1\0\1\venable\2\1\0\2\21ensure_installed\ball\14highlight\0\nsetup\28nvim-treesitter.configs\frequire\0" },
+    config = { "\27LJ\2\n‰\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\14highlight\1\0\1\venable\2\1\0\2\14highlight\0\21ensure_installed\ball\nsetup\28nvim-treesitter.configs\frequire\0" },
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
@@ -296,6 +331,11 @@ _G.packer_plugins = {
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/synthweave.nvim",
     url = "https://github.com/samharju/synthweave.nvim"
   },
+  ["telescope-dap.nvim"] = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/telescope-dap.nvim",
+    url = "https://github.com/nvim-telescope/telescope-dap.nvim"
+  },
   ["telescope-live-grep-args.nvim"] = {
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/telescope-live-grep-args.nvim",
@@ -305,6 +345,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  tests = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/tests",
+    url = "https://github.com/4DRIAN0RTIZ/tests"
   },
   ["todo-comments.nvim"] = {
     loaded = true,
@@ -330,6 +375,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/vCoolor.vim",
     url = "https://github.com/KabbAmine/vCoolor.vim"
+  },
+  ["venn.nvim"] = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/venn.nvim",
+    url = "https://github.com/jbyuki/venn.nvim"
   },
   vim = {
     loaded = true,
@@ -361,6 +411,16 @@ _G.packer_plugins = {
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/vim-polyglot",
     url = "https://github.com/sheerun/vim-polyglot"
   },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
+  },
+  ["websearcher.nvim"] = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/websearcher.nvim",
+    url = "https://github.com/KaitoMuraoka/websearcher.nvim"
+  },
   ["which-key.nvim"] = {
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/which-key.nvim",
@@ -375,7 +435,7 @@ try_loadstring("\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K
 time([[Config for duck.nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
-try_loadstring("\27LJ\2\n‰\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\14highlight\1\0\1\venable\2\1\0\2\21ensure_installed\ball\14highlight\0\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
+try_loadstring("\27LJ\2\n‰\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\14highlight\1\0\1\venable\2\1\0\2\14highlight\0\21ensure_installed\ball\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
 time([[Config for nvim-treesitter]], false)
 
 _G._packer.inside_compile = false

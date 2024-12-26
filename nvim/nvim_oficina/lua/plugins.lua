@@ -42,14 +42,6 @@ return require("packer").startup(function(use)
   use "rcarriga/nvim-notify"
   use "vyfor/cord.nvim"
   use "folke/noice.nvim"
-  use {
-  'edluffy/hologram.nvim',
-  config = function()
-    require('hologram').setup{
-      auto_display = true
-    }
-  end
-}
 --  use "tpope/vim-dadbod"
 --  use "kristijanhusak/vim-dadbod-ui"
 -- use "kristijanhusak/vim-dadbod-completion"
@@ -112,4 +104,16 @@ return require("packer").startup(function(use)
   use 'karb94/neoscroll.nvim'
   use 'AndreM222/copilot-lualine'
   use "jbyuki/venn.nvim"
+  use "KaitoMuraoka/websearcher.nvim"
+  use "4DRIAN0RTIZ/binaryclock.nvim"
+  use "sphamba/smear-cursor.nvim"
+  -- Debugger PHP
+  use "mfussenegger/nvim-dap"
+  use "rcarriga/nvim-dap-ui"
+  use "theHamsta/nvim-dap-virtual-text"
+  use "nvim-telescope/telescope-dap.nvim"
+  use {
+      'uloco/bluloco.nvim',
+      requires = { 'rktjmp/lush.nvim' }
+  }
 end)

@@ -275,3 +275,45 @@ vim.api.nvim_set_keymap('n', ';da', ':lua require("duck").cook_all()<CR>', { nor
 
 vim.api.nvim_set_keymap('n', '<leader>gbl', ':Gitsigns blame_line<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>gb', ':Gitsigns blame<CR>', { noremap = true, silent = true })
+
+
+vim.api.nvim_set_keymap('n', '<leader>pi', ':lua require("config.photo_show").show_image("/home/neandertech/space.gif")<CR>', { noremap = true, silent = true })
+
+
+-- =====================================
+-- WEBSEARCHER
+-- =====================================
+vim.api.nvim_set_keymap("v", "<leader>ss", ":lua require('websearcher').search_selected()<CR>", { noremap = true, silent = true })
+
+
+-- =====================================
+-- DAP
+-- =====================================
+
+vim.keymap.set('n', '<F5>', function() require('dap').continue() end) -- Continuar
+vim.keymap.set('n', '<F10>', function() require('dap').step_over() end) -- Siguiente
+vim.keymap.set('n', '<F11>', function() require('dap').step_into() end) -- Entrar
+vim.keymap.set('n', '<F12>', function() require('dap').step_out() end) -- Salir
+
+vim.keymap.set('n', '<Leader>b', function() require('dap').toggle_breakpoint() end) -- Toggle breakpoint
+vim.keymap.set('n', '<Leader>B', function() require('dap').set_breakpoint() end) -- Set breakpoint
+vim.keymap.set('n', '<Leader>lp', function() require('dap').set_breakpoint(nil, nil, vim.fn.input('Log point message: ')) end) -- Log point 
+
+vim.keymap.set('n', '<Leader>dr', function() require('dap').repl.open() end) -- Abrir REPL
+vim.keymap.set('n', '<Leader>dl', function() require('dap').run_last() end) -- Ejecutar última configuración
+
+vim.keymap.set({'n', 'v'}, '<Leader>dh', function()
+  require('dap.ui.widgets').hover()
+end)
+vim.keymap.set({'n', 'v'}, '<Leader>dp', function()
+  require('dap.ui.widgets').preview()
+end)
+
+vim.keymap.set('n', '<Leader>df', function()
+  local widgets = require('dap.ui.widgets')
+  widgets.centered_float(widgets.frames)
+end)
+vim.keymap.set('n', '<Leader>ds', function()
+  local widgets = require('dap.ui.widgets')
+  widgets.centered_float(widgets.scopes)
+end)

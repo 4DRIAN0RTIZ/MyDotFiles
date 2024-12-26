@@ -33,5 +33,15 @@
   "rust-analyzer.inlayHints.parameterHints.enable": false,
   "rust-analyzer.updates.checkOnStartup": false,
   "rust-analyzer.updates.channel": "stable",
-  "rust-analyzer.hover.documentation.enable": true
+  "rust-analyzer.hover.documentation.enable": true,
+
+  // Configuración de Python
+  "python.linting.enabled": false,
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.typeCheckingMode": "off",
+  "diagnostic.virtualText": false,
+  "python.analysis.inlayHints.variableTypes": false,
+  "python.analysis.inlayHints.functionReturnTypes": false,
+  "python.analysis.inlayHints.parameterNames.enabled": false,
+  "python.analysis.inlayHints.parameterTypes": false
 }

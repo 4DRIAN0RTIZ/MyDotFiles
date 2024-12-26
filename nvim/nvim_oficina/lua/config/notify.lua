@@ -1,6 +1,6 @@
 -- ~/.config/nvim/lua/plugins/notify.lua
 require("notify").setup({
-    stages = "slide",
+    stages = "static",
     timeout = 5000,
     renderer = "minimal",
     background_colour = "#000000",
