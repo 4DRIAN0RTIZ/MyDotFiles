@@ -284,7 +284,8 @@ vim.api.nvim_set_keymap('n', '<leader>pi', ':lua require("config.photo_show").sh
 -- WEBSEARCHER
 -- =====================================
 vim.api.nvim_set_keymap("v", "<leader>ss", ":lua require('websearcher').search_selected()<CR>", { noremap = true, silent = true })
-
+vim.api.nvim_set_keymap("v", "<leader>se", ":lua require('websearcher').search_selected_with_engine()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<leader>sm", ":lua require('websearcher').search_selected_multiple()<CR>", { noremap = true, silent = true })
 
 -- =====================================
 -- DAP
