@@ -29,15 +29,13 @@ mason.setup({
     },
 })
 
-
-
 -- Configurar servidores automáticamente
 local servers = { 'pyright', 'html', 'ts_ls', 'sqls', 'intelephense' }
 vim.diagnostic.config({
     virtual_text = false,
     underline = true,
     signs = true,
-    update_in_insert = false,
+    update_in_insert = true,
 })
 
 local on_attach = function(client, bufnr)

@@ -77,3 +77,25 @@ function irprodServer() {
 function irxmlpruebas() {
   cd /mnt/y/en-trega/xml_pruebas
 }
+
+function startenv() {
+  # Por defecto (sin argumentos) se inicia el entorno virtual de python venv
+  # Si se pasa un argumento, se inicia el entorno virtual de python correspondiente
+  #
+  # Primero verifica si existe, si no, lo crea
+  if [ -z "$1" ]; then
+    if [ -d "venv" ]; then
+      source venv/bin/activate
+    else
+      python3 -m venv venv
+      source venv/bin/activate
+    fi
+  else
+    if [ -d "$1" ]; then
+      source "$1"/bin/activate
+    else
+      python3 -m venv "$1"
+      source "$1"/bin/activate
+    fi
+  fi
+}

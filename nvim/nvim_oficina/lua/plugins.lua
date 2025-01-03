@@ -38,7 +38,7 @@ return require("packer").startup(function(use)
   use "StanAngeloff/php.vim"
   use "folke/which-key.nvim"
   use "folke/trouble.nvim"
-  use "nvim-tree/nvim-web-devicons"
+  -- use "nvim-tree/nvim-web-devicons"
   use "rcarriga/nvim-notify"
   use "vyfor/cord.nvim"
   use "folke/noice.nvim"

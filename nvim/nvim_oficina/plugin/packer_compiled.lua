@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/awesome-vim-colorschemes",
     url = "https://github.com/rafi/awesome-vim-colorschemes"
   },
+  ["binaryclock.nvim"] = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/binaryclock.nvim",
+    url = "https://github.com/4DRIAN0RTIZ/binaryclock.nvim"
+  },
   ["bluloco.nvim"] = {
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/bluloco.nvim",
@@ -289,7 +294,7 @@ _G.packer_plugins = {
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/nvim-tree/nvim-web-devicons"
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["open-browser.vim"] = {
     loaded = true,
@@ -321,6 +326,11 @@ _G.packer_plugins = {
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/presence.nvim",
     url = "https://github.com/andweeb/presence.nvim"
   },
+  ["smear-cursor.nvim"] = {
+    loaded = true,
+    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/smear-cursor.nvim",
+    url = "https://github.com/sphamba/smear-cursor.nvim"
+  },
   ["sqls.nvim"] = {
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/sqls.nvim",
@@ -345,11 +355,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  tests = {
-    loaded = true,
-    path = "/home/neandertech/.local/share/nvim/site/pack/packer/start/tests",
-    url = "https://github.com/4DRIAN0RTIZ/tests"
   },
   ["todo-comments.nvim"] = {
     loaded = true,
@@ -429,14 +434,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: duck.nvim
-time([[Config for duck.nvim]], true)
-try_loadstring("\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nhatch\tduck\frequireH\1\0\6\0\6\0\t6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0003\4\5\0004\5\0\0B\0\5\1K\0\1\0\0\15<leader>dd\6n\bset\vkeymap\bvim\0", "config", "duck.nvim")
-time([[Config for duck.nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 try_loadstring("\27LJ\2\n‰\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\14highlight\1\0\1\venable\2\1\0\2\14highlight\0\21ensure_installed\ball\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
 time([[Config for nvim-treesitter]], false)
+-- Config for: duck.nvim
+time([[Config for duck.nvim]], true)
+try_loadstring("\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nhatch\tduck\frequireH\1\0\6\0\6\0\t6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0003\4\5\0004\5\0\0B\0\5\1K\0\1\0\0\15<leader>dd\6n\bset\vkeymap\bvim\0", "config", "duck.nvim")
+time([[Config for duck.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

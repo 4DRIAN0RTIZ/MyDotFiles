@@ -145,3 +145,9 @@ vim.api.nvim_set_keymap('n', '<space>j', ':<C-u>CocNext<CR>', { noremap = true, 
 vim.api.nvim_set_keymap('n', '<space>k', ':<C-u>CocPrev<CR>', { noremap = true, silent = true, nowait = true })
 -- Resume latest coc list.
 vim.api.nvim_set_keymap('n', '<space>p', ':<C-u>CocListResume<CR>', { noremap = true, silent = true, nowait = true })
+
+-- Cambiar el estilo de las señales de Coc
+vim.fn.sign_define("CocError", { text = "⛔", texthl = "CocErrorSign", linehl = "CocErrorLine", numhl = "CocErrorSign" })
+vim.fn.sign_define("CocWarning", { text = "⚠️", texthl = "CocWarningSign", linehl = "CocWarningLine", numhl = "CocWarningSign" })
+vim.fn.sign_define("CocInfo", { text = "ℹ️", texthl = "CocInfoSign", linehl = "CocInfoLine", numhl = "CocInfoSign" })
+vim.fn.sign_define("CocHint", { text = "💡", texthl = "CocHintSign", linehl = "CocHintLine", numhl = "CocHintSign" })

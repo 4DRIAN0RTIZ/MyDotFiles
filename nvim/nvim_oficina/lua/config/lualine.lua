@@ -113,7 +113,7 @@ require('lualine').setup {
         lualine_a = {'mode'},
         lualine_b = {'branch', 'diff', {'diagnostics', sources={'nvim_lsp', 'coc'}}},
         lualine_c = {'filename'},
-        lualine_x = { get_pomodoro_status, get_current_database, working_on_ticket, end_laboral_day, {
+        lualine_x = { {
             'copilot',
             -- Default values
             symbols = {
@@ -151,5 +151,13 @@ require('lualine').setup {
         lualine_z = {}
     },
     tabline = {},
-    extensions = {'fugitive'}
+    extensions = {'fugitive'},
+    winbar = {
+        lualine_a = {},
+        lualine_b = {},
+        lualine_c = {get_current_database, get_pomodoro_status},
+        lualine_x = {working_on_ticket, end_laboral_day},
+        lualine_y = {},
+        lualine_z = {}
+    }
 }

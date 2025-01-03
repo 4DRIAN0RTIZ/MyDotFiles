@@ -21,7 +21,11 @@ local colorschemes = {
   dracula = {
     LineNrAbove = { fg = '#BD93F9', bold = true },
     LineNrBelow = { fg = '#BD93F9', bold = true },
-  }
+  },
+  bluloco = {
+    LineNrAbove = { fg = '#FFFFFF', bold = true },
+    LineNrBelow = { fg = '#FFFFFF', bold = true },
+  },
 }
 
 local function applyNumberColors()

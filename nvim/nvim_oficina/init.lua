@@ -4,7 +4,7 @@ require('settings')
 
 -- Configuración básica
 local function configure_basic()
-  vim.opt.signcolumn = "no"
+  vim.opt.signcolumn = "yes"
   vim.opt.shell = "sh"
   vim.g.mapleader = " "
   vim.opt.clipboard = "unnamedplus"

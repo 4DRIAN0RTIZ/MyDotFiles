@@ -1,5 +1,5 @@
 require('CopilotChat').setup({
-    model = 'gpt-4o',
+    model = 'claude-3.5-sonnet',
     question_header = '## NeanderTech: ',
     answer_header = '## Quaker State: ',
     error_header = '## Error: ',
